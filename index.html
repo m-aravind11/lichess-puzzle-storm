@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puzzle Storm</title>
+  </head>
+  <body>
+    <main class="storm">
+      <div class="board-wrap">
+        <div id="board"></div>
+      </div>
+
+      <aside class="panel">
+        <div id="clock" class="clock">5:00</div>
+        <p id="hint" class="hint">Clock starts on your first move</p>
+
+        <div class="score">
+          <span id="solved">0</span>
+          <label>solved</label>
+        </div>
+
+        <div id="turn" class="turn"></div>
+
+        <dl class="stats">
+          <dt>Puzzle rating</dt><dd id="rating">–</dd>
+          <dt>Mistakes</dt><dd id="mistakes">0</dd>
+          <dt>Skipped</dt><dd id="skipped">0</dd>
+        </dl>
+
+        <button id="skip" class="skip" type="button">Skip puzzle</button>
+      </aside>
+    </main>
+
+    <div id="results" class="results" hidden>
+      <div class="card">
+        <h2>Time's up</h2>
+        <div id="results-body"></div>
+        <button id="again" type="button">Play again</button>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

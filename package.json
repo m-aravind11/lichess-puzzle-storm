@@ -1,0 +1,32 @@
+{
+  "name": "lichess-puzzle-storm",
+  "version": "1.0.0",
+  "description": "A custom web-app implementation of the PuzzleStorm feature with real-time leaderboard tracking",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "puzzles": "node scripts/build-puzzles.mjs",
+    "test": "node --experimental-strip-types --no-warnings --test 'test/*.test.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-aravind11/lichess-puzzle-storm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-aravind11/lichess-puzzle-storm/issues"
+  },
+  "homepage": "https://github.com/m-aravind11/lichess-puzzle-storm#readme",
+  "dependencies": {
+    "@lichess-org/chessground": "^10.1.1",
+    "chessops": "^0.15.1"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  },
+  "type": "module"
+}
